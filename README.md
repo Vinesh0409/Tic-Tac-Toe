@@ -15,7 +15,7 @@ A clean, responsive Tic Tac Toe game for the browser built with HTML, CSS, and J
 ## 🛠️ Tech Stack
 - **HTML5** – semantic structure
 - **CSS3** – styling and layout
-- **JavaScript ** – game logic and interactivity
+- **JavaScript** – game logic and interactivity
 
 ---
 

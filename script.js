@@ -1,4 +1,4 @@
-let play = [
+var play = [
 	["", "", ""],
 	["", "", ""],
 	["", "", ""],
@@ -78,7 +78,21 @@ setInterval(() => {
 //     }, 600);
 
 async function main() {
-	let n = 0;
+	var n = 0;
+	document.querySelector(".replay").addEventListener("click", () => {
+		document.querySelector(".result").classList.remove("show");
+		 n=0
+		 play = [
+			["", "", ""],
+			["", "", ""],
+			["", "", ""],
+		];
+		document.querySelector(".info-bar").querySelector("span").innerHTML = "X";
+		document.querySelectorAll('.check').forEach((e)=>{
+			e.innerHTML=""
+		})
+	});
+
 	document.querySelectorAll(".check").forEach((e) => {
 		e.addEventListener("click", async () => {
 			if (e.innerHTML !== "") {
@@ -123,6 +137,8 @@ async function main() {
 			}
 		});
 	});
+
+	
 	// const winner = check()
 }
 main();
